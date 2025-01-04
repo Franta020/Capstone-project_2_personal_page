@@ -1,0 +1,41 @@
+:root {
+  --main: #7faf64;
+  --background: #ecfce5;
+  --secondary: #d4e7c5;
+  --text: #508d4e;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  align-items: center;
+}
+p {
+  margin-left: 60px;
+  margin-top: 0;
+  font-size: 2rem;
+  color: var(--secondary);
+}
+h1 {
+  font-size: 50px;
+  color: var(--background);
+  margin-left: 60px;
+  padding: 10px;
+  border: solid 3px;
+  margin-bottom: 0;
+}
+.imagae-header {
+  opacity: 0, 5;
+}
+
+.container {
+  display: flex;
+  background: linear-gradient(30deg, var(--main), var(--secondary));
+  height: 300px;
+  width: 89%;
+  align-items: center;
+  gap: 80px;
+  justify-content: space-between;
+}
