@@ -59,7 +59,134 @@ h1 {
 .dark {
 }
 
-.container-2 {
+.container-itroduction {
   background-color: var(--background);
-  height: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.heading-2 h2 {
+  color: var(--text);
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.container-itroduction img {
+  margin-left: 80px;
+  border-radius: 50%;
+  border: solid 2px var(--text);
+}
+
+.heading-2 p {
+  margin-top: 0;
+  color: var(--main);
+}
+
+.container-education {
+  margin: 60px 0;
+  display: flex;
+  grid-template: 1fr 1fr / repeat(8, 1fr);
+  grid-gap: 2px;
+  align-self: center;
+  gap: 60px;
+  width: 80%;
+}
+
+.grid-item {
+  flex: 1 0 150px;
+  padding: 30px 30px;
+  background-color: var(--secondary);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+.one {
+  grid-column: span 3;
+}
+.two {
+  grid-column-start: -5;
+  grid-column-end: -2;
+}
+
+.tree {
+  grid-area: 2 / 2 / 2 / 5;
+}
+.four {
+  grid-area: 2 / -4 / 2 / -1;
+}
+
+.container-education p {
+  font-size: 0.9rem;
+  color: var(--main);
+  margin-bottom: 0;
+}
+
+.container-education h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.container-projects {
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+}
+.container-projects-b {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 80%;
+  margin-bottom: 60px;
+}
+
+.container-projects-b img {
+  border-right: solid 3px var(--secondary);
+}
+.item {
+  display: flex;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  gap: 30px;
+  align-items: center;
+  border-radius: 5px;
+}
+.container-projects-b p {
+  color: var(--text);
+  margin-right: 30px;
+}
+
+a:link {
+  text-decoration: none;
+  color: blue;
+}
+a:hover {
+  color: var(--main);
+}
+a:active {
+  color: var(--background);
+}
+a:visited {
+  color: purple;
+}
+
+.container-contacts {
+  display: flex;
+  background-color: var(--main);
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.contact-item {
+  color: var(--secondary);
+}
+
+.contact-item p {
+  font-size: 0.8rem;
 }
